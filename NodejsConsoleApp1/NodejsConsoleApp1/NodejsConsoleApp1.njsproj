@@ -5,6 +5,8 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>NodejsConsoleApp1</Name>
     <RootNamespace>NodejsConsoleApp1</RootNamespace>
+    <Environment>
+    </Environment>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -12,7 +14,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b9ffda73-5da9-40fb-9a23-03e7e4e2f7f7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>eventtest.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -21,7 +23,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <ProjectView>ProjectFiles</ProjectView>
-    <StartWebBrowser>false</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,6 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="eventtest.js" />
+    <Compile Include="global.js" />
+    <Compile Include="json.js" />
+    <Compile Include="setImmediate2.js" />
+    <Compile Include="setImmediate1.js" />
+    <Compile Include="setInterval.js" />
+    <Compile Include="setTimeout.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
