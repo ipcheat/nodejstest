@@ -1,0 +1,10 @@
+{
+  "name": "libtest1",
+  "version": "0.0.1",
+  "description": "libtest1",
+  "main": "./lib/core.js",
+  "author": {
+    "name": "cjm",
+    "email": ""
+  }
+}

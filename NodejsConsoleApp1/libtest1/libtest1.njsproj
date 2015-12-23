@@ -3,18 +3,17 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>NodejsConsoleApp1</Name>
-    <RootNamespace>NodejsConsoleApp1</RootNamespace>
-    <Environment>
-    </Environment>
+    <Name>libtest1</Name>
+    <RootNamespace>libtest1</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b9ffda73-5da9-40fb-9a23-03e7e4e2f7f7</ProjectGuid>
+    <ProjectGuid>d8610138-6fff-4f9d-b300-7e3c2ca9e2ea</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>eventtest.js</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -23,7 +22,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <ProjectView>ProjectFiles</ProjectView>
-    <StartWebBrowser>False</StartWebBrowser>
+    <StartWebBrowser>false</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,21 +31,17 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
-    <Compile Include="eventtest.js" />
-    <Compile Include="fs.js" />
-    <Compile Include="fstest.js" />
-    <Compile Include="global.js" />
-    <Compile Include="json.js" />
-    <Compile Include="modulepath.js" />
-    <Compile Include="setImmediate2.js" />
-    <Compile Include="setImmediate1.js" />
-    <Compile Include="setInterval.js" />
-    <Compile Include="setTimeout.js" />
-    <Compile Include="StringDecoder.js" />
-    <Content Include="global.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="doc\" />
+    <Folder Include="bin\" />
+    <Folder Include="test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\core.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

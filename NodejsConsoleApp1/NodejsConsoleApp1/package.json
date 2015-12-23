@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "NodejsConsoleApp1",
   "version": "0.0.0",
   "description": "NodejsConsoleApp1",
@@ -8,6 +8,8 @@
     "email": ""
   },
   "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "eventproxy": "^0.3.4",
     "log": "^1.4.0",
     "md5": "^2.0.0",
     "mysql": "^2.10.0"
